@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Hello {{ name }}{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>Welcome {{ name }}</h1>
+<p>welcome to dev club</p>
+{% endblock %}
